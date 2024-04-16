@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme=None>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</head>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+    
+    var checkbox = document.querySelector('input[type="checkbox"]');
+
+    checkbox.addEventListener('change', function () {
+        if (checkbox.checked) {
+            window.location.href = window.location.href.split('?')[0] + '?theme=dark'
+            console.log(window.location.href)
+        } else {
+            window.location.href = window.location.href.split('?')[0]
+            console.log(window.location.href)
+        }
+    });
+    });
+</script>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Shreyansh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/leaderboard">Leaderboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/stats">Stats</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Teams
+                        </a>
+                        <ul class="dropdown-menu"> -->
+                            <!-- <li><a class="dropdown-item" href="/devansh">Devansh</a></li> -->
+                            <!-- <li><a class="dropdown-item" href="/hritikesh">Hritikesh</a></li>
+                            <li><a class="dropdown-item" href="/ritik">Ritik</a></li>
+                            <li><a class="dropdown-item" href="/achintya">Achintya</a></li>
+                            <li><a class="dropdown-item" href="/sharan">Sharan</a></li>
+                            <li><a class="dropdown-item" href="/taha">Taha</a></li>
+                            <li><a class="dropdown-item" href="/dewang">Dewang</a></li>
+                            <li><a class="dropdown-item" href="/dhruv">Dhruv</a></li> -->
+
+                        <!-- </ul>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/getmatchdata">Match-wise
+                            Points</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/stats">Stats</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Team Stats
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/stats/Devansh">Devansh</a></li>
+                        <li><a class="dropdown-item" href="/stats/Hritikesh">Hritikesh</a></li>
+                        <li><a class="dropdown-item" href="/stats/Ritik">Ritik</a></li>
+                        <li><a class="dropdown-item" href="/stats/Achintya">Achintya</a></li>
+                        <li><a class="dropdown-item" href="/stats/Sharan">Sharan</a></li>
+                        <li><a class="dropdown-item" href="/stats/Taha">Taha</a></li>
+                        <li><a class="dropdown-item" href="/stats/Dewang">Dewang</a></li>
+                        <li><a class="dropdown-item" href="/stats/Dhruv">Dhruv</a></li>
+                        
+                    </ul>
+                </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container py-5">
+        <h2> Leaderboard </h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Pos</th>
+                    <th scope="col">Team</th>
+                    <th scope="col">Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Diyan</td>
+                    <td>13855.8</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Vishes</td>
+                    <td>13505.5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Shreyans</td>
+                    <td>13394.50</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ishan</td>
+                    <td>12935</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Aryan</td>
+                    <td>12948.5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Vedant</td>
+                    <td>13174</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>KJ</td>
+                    <td>12635</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Hitanshu</td>
+                    <td>12487 </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <div class="container mb-5 pb-5">
+        <h2>Subs</h2>
+        <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Achintya <em><small class="text-muted">(12/4/2024)</small></em></h5>
+              <div class="card-text">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="green" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                    <span>Romario Shepherd</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                    <span>Glenn Phillips</span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Dhruv <em><small class="text-muted">(3/4/2024)</small></em></h5>
+              <div class="card-text">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="green" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                    <span>Mayank Dagar</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                    <span>Rovman Powell</span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Sharan <em><small class="text-muted">(2/4/2024)</small></em></h5>
+              <div class="card-text">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="green" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                    <span>Akash Mandwaal</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                    <span>Kartik Tyagi</span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Ritik <em><small class="text-muted">(28/3/2024)</small></em></h5>
+              <div class="card-text">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="green" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                    <span>Matheesha Pathirana</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                    <span>Washington Sundar</span>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+    </div> -->
+</body>
+</html>
